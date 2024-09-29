@@ -29,6 +29,7 @@ students : List[Student] = [
   Student("Арсений", 19),
 ]
 
+
 for student in students:
   student.mark = randint(0, 100)
 
