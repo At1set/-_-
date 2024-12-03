@@ -10,7 +10,7 @@ class Clock:
     return self.TimeOfDay // 3600
   
   def setSeconds(self, value):
-    if value < 0 or value > 60: return ValueError()
+    if value < 0 or value > 60: raise ValueError()
     oldTimeDay = Clock(self.TimeOfDay)
 
     self.TimeOfDay -= self.getSeconds()
@@ -24,7 +24,7 @@ class Clock:
     return self.Invariant()
   
   def setMinutes(self, value):
-    if value < 0 or value > 60: return ValueError()
+    if value < 0 or value > 60: raise ValueError()
     oldTimeDay = Clock(self.TimeOfDay)
 
     self.TimeOfDay -= self.getMinutes() * 60
@@ -38,7 +38,7 @@ class Clock:
     return self.Invariant()
   
   def setHours(self, value):
-    if value < 0 or value > 23: return ValueError()
+    if value < 0 or value > 23: raise ValueError()
     oldTimeDay = Clock(self.TimeOfDay)
 
     self.TimeOfDay -= self.getHours() * 3600
