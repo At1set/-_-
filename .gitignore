@@ -1,5 +1,7 @@
 # docx files
 *.docx
+sketch_nov14a
+Проект godot
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
