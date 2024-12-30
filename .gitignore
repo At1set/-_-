@@ -6,6 +6,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# godot filds
+godot/
+
 # C extensions
 *.so
 
